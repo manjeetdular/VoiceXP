@@ -15,39 +15,49 @@ import {
 const Responcetime = () => {
   const data = [
     {
-      name: "Page A",
-      pv: 240,
-      amt: 240,
+      name: "17:00",
+      Old: 4000,
+      New: 2400,
+      amt: 2400,
+      ur:9600,
     },
     {
-      name: "Page B",
-      pv: 139,
-      amt: 221,
+      name: "18:00",
+      Old: 3000,
+      New: 1398,
+      amt: 2210,
+      ur:9500,
     },
     {
-      name: "Page C",
-      pv: 980,
-      amt: 229,
+      name: "19:00",
+      Old: 2000,
+      New: 9800,
+      amt: 2290,
+      ur:4500,
     },
     {
-      name: "Page D",
-      pv: 390,
-      amt: 200,
+      name: "20:00",
+      Old: 2780,
+      New: 3908,
+      amt: 2000,
     },
     {
-      name: "Page E",
-      pv: 480,
-      amt: 218,
+      name: "21:00",
+      Old: 1890,
+      New: 4800,
+      amt: 2181,
     },
     {
-      name: "Page F",
-      pv: 380,
-      amt: 250,
+      name: "22:00",
+      Old: 2390,
+      New: 3800,
+      amt: 2500,
     },
     {
-      name: "Page G",
-      pv: 430,
-      amt: 210,
+      name: "23:00",
+      Old: 3490,
+      New: 4300,
+      amt: 2100,
     },
   ];
 
@@ -71,7 +81,7 @@ const Responcetime = () => {
           <Legend />
           <Line
             type="monotone"
-            dataKey="pv"
+            dataKey="New"
             stroke="#2a71ff"
             activeDot={{ r: 8 }}
           />

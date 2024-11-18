@@ -13,48 +13,48 @@ import {
 const Conversation = () => {
   const data = [
     {
-      name: "Page A",
-      uv: 4000,
-      pv: 2400,
+      name: "17:00",
+      Old: 4000,
+      New: 2400,
       amt: 2400,
       ur:9600,
     },
     {
-      name: "Page B",
-      uv: 3000,
-      pv: 1398,
+      name: "18:00",
+      Old: 3000,
+      New: 1398,
       amt: 2210,
       ur:9500,
     },
     {
-      name: "Page C",
-      uv: 2000,
-      pv: 9800,
+      name: "19:00",
+      Old: 2000,
+      New: 9800,
       amt: 2290,
       ur:4500,
     },
     {
-      name: "Page D",
-      uv: 2780,
-      pv: 3908,
+      name: "20:00",
+      Old: 2780,
+      New: 3908,
       amt: 2000,
     },
     {
-      name: "Page E",
-      uv: 1890,
-      pv: 4800,
+      name: "21:00",
+      Old: 1890,
+      New: 4800,
       amt: 2181,
     },
     {
-      name: "Page F",
-      uv: 2390,
-      pv: 3800,
+      name: "22:00",
+      Old: 2390,
+      New: 3800,
       amt: 2500,
     },
     {
-      name: "Page G",
-      uv: 3490,
-      pv: 4300,
+      name: "23:00",
+      Old: 3490,
+      New: 4300,
       amt: 2100,
     },
   ];
@@ -69,13 +69,12 @@ const Conversation = () => {
           <Legend />
           <Line
             type="monotone"
-            dataKey="pv"
+            dataKey="Old"
             stroke="#2a6fff"
             isAnimationActive={true}
             activeDot={{ r: 8 }}
           />
-          <Line type="monotone" dataKey="uv" stroke="#ffbfa4" />
-          <Line type="monotone" dataKey="ur" stroke="#2a6fff" />
+          <Line type="monotone" dataKey="New" stroke="#ffbfa4" />
         </LineChart>
       </ResponsiveContainer>
       
